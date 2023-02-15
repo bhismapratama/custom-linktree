@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*,
+body,
+html {
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, crimson, rgb(54, 54, 237));
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+section .logo {
+    margin: 50px 50px 5px 50px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+}
+
+section .logo img {
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    border-radius: 50px;
+    transition: 1s all;
+}
+
+section .logo:hover img {
+    border-radius: 15px;
+    transform: scale(1.1) rotate(15deg);
+}
+
+/* name */
+section .name h1 {
+    text-transform: capitalize;
+    color: white;
+    font-size: 34px;
+    padding-top: 15px;
+}
+
+section .name h1 span {
+    color: red;
+}
+
+/* main */
+section .main {
+    width: 40%;
+}
+
+.main ul {
+    padding: 20px 0 70px 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.main ul li {
+    position: relative;
+}
+
+.main ul li a {
+    margin: 25px auto;
+    padding: .5rem 50px;
+    max-width: 100%;
+    font-size: 26px;
+    color: crimson;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 40px;
+}
+
+.main ul .satu {
+    color: #242424;
+}
+
+.main ul .dua {
+    color: #1DA1F2;
+}
+
+.main ul .tiga {
+    color: #C13584;
+}
+
+.main ul .empat {
+    color: #00f2ea;
+}
+
+.main ul .lima {
+    color: #0077b5;
+}
+
+.main a,
+.main a:focus {
+    color: crimson;
+    background-color: white;
+    transition: .3s all ease-in-out;
+}
+
+.main a:hover,
+.main a:focus:hover {
+    color: white;
+    background-color: crimson;
+}
+
+.main ul li a i {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 6px 0 0;
+    top: 0;
+    bottom: 0;
+    font-size: 30px;
+}
+
+/* footer */
+section .footer {
+    padding-bottom: 2rem;
+}
+
+section .footer h1 {
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+section .footer span {
+    transition: all .3s;
+    text-transform: none;
+}
+
+section .footer span:hover {
+    color: rgb(0, 183, 255);
+    cursor: pointer;
+}
+
+section .footer i {
+    transition: .3s all;
+}
+
+section .footer i:hover {
+    color: rgb(0, 183, 255);
+    cursor: pointer;
+}
+
+@media (max-width:992px) {
+    section {
+        height: 100vh;
+    }
+
+    section .main {
+        width: 55%;
+    }
+}
+
+@media (max-width:768px) {
+    section .name h1 {
+        font-size: 36px;
+    }
+
+    section .main {
+        width: 60%;
+    }
+
+    .main ul li a {
+        margin: 30px auto;
+        padding: 5px 50px;
+        max-width: 100%;
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    section .footer h1 {
+        font-size: 16px;
+        color: white;
+    }
+}
+
+@media (max-width:576px) {
+    section .main {
+        width: 80%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main ul {
+        width: 100%;
+        padding: 30px 0 80px 0;
+        margin: 0;
+        list-style: none;
+        text-align: center;
+    }
+
+    section .name h1 {
+        text-transform: capitalize;
+        color: white;
+        font-size: 30px;
+        padding-top: 12px;
+    }
+
+    section .name h1 span {
+        color: red;
+    }
+
+    .main ul li a {
+        margin: 20px 0;
+        padding: 8px 5px;
+        font-size: 22px;
+        font-weight: 600;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    .main ul li a i {
+        font-size: 28px;
+    }
+}
